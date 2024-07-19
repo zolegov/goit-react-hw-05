@@ -1,0 +1,9 @@
+.castList {
+  list-style: none;
+}
+.castListItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,16 @@
+.link {
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.active {
+  color: orangered;
+}
+.nav {
+  display: flex;
+  gap: 20px;
+}
+header {
+  box-shadow: 0px 5px 5px rgb(0, 0, 0);
+  padding: 20px;
+}

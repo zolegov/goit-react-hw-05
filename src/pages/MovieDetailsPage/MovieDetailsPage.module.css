@@ -1,0 +1,23 @@
+.detailContent {
+  display: flex;
+  gap: 20px;
+  border-bottom: 2px solid gray;
+  padding-bottom: 5px;
+}
+.description {
+  padding-top: 20px;
+}
+.goBack {
+  padding: 10px;
+}
+.link {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.active {
+  color: orangered;
+}
+.moveDetailsList {
+  list-style: none;
+}
