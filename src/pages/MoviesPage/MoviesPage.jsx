@@ -11,6 +11,7 @@ export default function MoviesPage() {
   const [value, setValue] = useState(query);
   const [searchMovies, setSearchMovies] = useState([]);
   const location = useLocation();
+  console.log("locationM: ", location);
 
   useEffect(() => {
     if (query) {

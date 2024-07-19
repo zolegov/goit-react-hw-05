@@ -17,7 +17,7 @@ export default function MovieDetailsPage() {
   console.log("locationdet: ", location);
 
   const imgBaseUrl = "https://image.tmdb.org/t/p/w200";
-  const backLinkRef = useRef(location.state ?? "/movie");
+  const backLinkRef = useRef(location.state ?? "/");
 
   useEffect(() => {
     async function fetchMovie() {

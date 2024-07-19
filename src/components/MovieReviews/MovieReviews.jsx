@@ -18,9 +18,7 @@ export default function MovieReviews() {
   if (!movieReviews) {
     return <div>Loading...</div>;
   }
-  if (movieReviews.length === 0) {
-    return <p>There are no reviews for this movie.</p>;
-  }
+
   console.log("movieReviews777: ", movieReviews);
   return (
     <ul>
