@@ -6,6 +6,7 @@ import {
   NavLink,
   Outlet,
 } from "react-router-dom";
+import { Suspense } from "react";
 import { getMovieById } from "../../movie-api";
 import { GoArrowLeft } from "react-icons/go";
 import css from "./MovieDetailsPage.module.css";
@@ -67,7 +68,9 @@ export default function MovieDetailsPage() {
             </NavLink>
           </li>
         </ul>
-        <Outlet />
+        <Suspense fallback={<div>Loading subpage...</div>}>
+          <Outlet />
+        </Suspense>
       </div>
     </>
   );
