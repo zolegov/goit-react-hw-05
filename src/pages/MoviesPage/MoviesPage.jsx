@@ -11,7 +11,6 @@ export default function MoviesPage() {
   const [value, setValue] = useState(query);
   const [searchMovies, setSearchMovies] = useState([]);
   const location = useLocation();
-  console.log("locationM: ", location);
 
   useEffect(() => {
     if (query) {
@@ -35,6 +34,7 @@ export default function MoviesPage() {
   return (
     <div className={css.inputSearchMovie}>
       <SearchMovie value={value} onSearch={handleSearch} />
+
       {searchMovies.length > 0 && (
         <SearchMovieList searchMovies={searchMovies} state={location} />
       )}

@@ -7,7 +7,6 @@ export default function HomePage() {
   const [movies, setMovie] = useState();
 
   const location = useLocation();
-  console.log("locationH: ", location);
 
   useEffect(() => {
     async function fetshMovies() {

@@ -19,17 +19,18 @@ export default function MovieReviews() {
     return <div>Loading...</div>;
   }
 
-  console.log("movieReviews777: ", movieReviews);
   return (
-    <ul>
-      {movieReviews.map((movieReview, index) => (
-        <li key={index}>
-          <p>
-            <b>{movieReview.author}</b>
-          </p>
-          <p>{movieReview.content}</p>
-        </li>
-      ))}
-    </ul>
+    <>
+      <ul>
+        {movieReviews.map((movieReview, index) => (
+          <li key={index}>
+            <p>
+              <b>{movieReview.author}</b>
+            </p>
+            <p>{movieReview.content}</p>
+          </li>
+        ))}
+      </ul>
+    </>
   );
 }

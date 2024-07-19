@@ -14,7 +14,6 @@ export default function MovieDetailsPage() {
   const { movieId } = useParams();
   const [movieDetail, setMovieDetail] = useState(null);
   const location = useLocation();
-  console.log("locationdet: ", location);
 
   const imgBaseUrl = "https://image.tmdb.org/t/p/w200";
   const backLinkRef = useRef(location.state ?? "/");
